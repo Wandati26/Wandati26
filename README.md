@@ -195,23 +195,11 @@ Golden paths so the secure route is the *easy* route. And **cost as a guardrail*
 
 ---
 
-## `$ git log --stat --author=Wandati26`
+## `$ git log --graph --author=Wandati26`
 
-> These cards are generated **into this repository** by a scheduled workflow, not fetched
-> from a shared third-party service at view time. Same reasoning as the rest of my pipeline:
-> if you can't control the source, you can't depend on it.
-
-<div align="center">
-
-<img src="assets/metrics.svg" alt="GitHub activity, community and repository overview" width="100%" />
-
-<br/><br/>
-
-<img src="assets/metrics.languages.svg" alt="Language breakdown and full-year contribution calendar" width="100%" />
-
-</div>
-
-### Contribution activity
+> Most of what I build lives in private company repositories, so this graph
+> undercounts by a wide margin. The numbers worth judging me on are in the
+> impact table above — and I'm happy to walk through any of them.
 
 <div align="center">
 <picture>

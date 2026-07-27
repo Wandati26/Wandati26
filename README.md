@@ -4,7 +4,7 @@
 
 <br/>
 
-<a href="https://www.linkedin.com/in/wandati"><img src="https://img.shields.io/badge/LinkedIn-connect-5ef2a0?style=for-the-badge&logo=linkedin&logoColor=5ef2a0&labelColor=0b131c&color=141f2b" alt="LinkedIn" /></a>
+<a href="https://www.linkedin.com/in/marvin-wandati/"><img src="https://img.shields.io/badge/LinkedIn-connect-5ef2a0?style=for-the-badge&logo=linkedin&logoColor=5ef2a0&labelColor=0b131c&color=141f2b" alt="LinkedIn" /></a>
 <a href="mailto:wandatimarvin23@gmail.com"><img src="https://img.shields.io/badge/Email-reach%20out-5ef2a0?style=for-the-badge&logo=gmail&logoColor=5ef2a0&labelColor=0b131c&color=141f2b" alt="Email" /></a>
 <img src="https://komarev.com/ghpvc/?username=Wandati26&style=for-the-badge&label=VISITORS&color=141f2b&labelColor=0b131c" alt="Profile views" />
 
@@ -18,6 +18,8 @@
 wandati@secops:~$ cat /etc/profile.d/identity.sh
 
   ROLE      DevSecOps Engineer — secure, observable, production-ready cloud platforms
+  BASED     Milan, Italy
+  EXP       2+ years across cloud platform engineering and production operations
   CONTEXT   B2B SaaS · sole DevSecOps engineer · AWS-native platform
   REGION    eu-west-1 · 3 isolated environments · fully Terraform-managed
   THESIS    Practical security — controls that reduce risk, survive audits,
@@ -142,10 +144,27 @@ Golden paths so the secure route is the *easy* route. And **cost as a guardrail*
 
 ---
 
-## `$ journalctl --unit platform --since "career start"`
+## `$ ls ~/.credentials`
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Docker%20%2B%20Kubernetes-Udemy-5ef2a0?style=for-the-badge&logo=docker&logoColor=5ef2a0&labelColor=0b131c&color=141f2b" alt="Docker and Kubernetes — Udemy" />
+<img src="https://img.shields.io/badge/Certified%20DevOps%20Practitioner-TechWorld%20with%20Nana-5ef2a0?style=for-the-badge&logo=kubernetes&logoColor=5ef2a0&labelColor=0b131c&color=141f2b" alt="Certified DevOps Practitioner — TechWorld with Nana" />
+<img src="https://img.shields.io/badge/Postman%20API%20Fundamentals%20Expert-Canvas-5ef2a0?style=for-the-badge&logo=postman&logoColor=5ef2a0&labelColor=0b131c&color=141f2b" alt="Postman API Fundamentals Expert — Canvas" />
+
+<br/>
+
+<img src="https://img.shields.io/badge/AWS%20Educate-8%20completed-38d9e0?style=for-the-badge&logo=amazonwebservices&logoColor=38d9e0&labelColor=0b131c&color=12212b" alt="AWS Educate — 8 completed" />
+<img src="https://img.shields.io/badge/KodeKloud-6%20completed-38d9e0?style=for-the-badge&logo=kubernetes&logoColor=38d9e0&labelColor=0b131c&color=12212b" alt="KodeKloud — 6 completed" />
+
+</div>
+
+---
+
+## `$ journalctl --unit platform --since "2025-02"`
 
 <details open>
-<summary><b>◢ DevSecOps Engineer · Expandi</b> — <i>B2B SaaS · sole DevSecOps engineer · AWS-native</i></summary>
+<summary><b>◢ DevSecOps Engineer · Expandi Group</b> · <code>Feb 2026 — Present</code> — <i>B2B SaaS · sole DevSecOps engineer · AWS-native</i></summary>
 
 <br/>
 
@@ -162,7 +181,7 @@ Golden paths so the secure route is the *easy* route. And **cost as a guardrail*
 </details>
 
 <details>
-<summary><b>◢ Ryanada Limited</b> — <i>Cloud hosting platform · domains & VPS · Kubernetes operations</i></summary>
+<summary><b>◢ Ryanada Limited</b> · <code>Feb 2025 — Aug 2025</code> — <i>Cloud hosting platform · domains & VPS · Kubernetes operations</i></summary>
 
 <br/>
 
@@ -224,7 +243,7 @@ wandati@secops:~$ _
 
 ### `$ ./connect`
 
-<a href="https://www.linkedin.com/in/wandati"><img src="https://img.shields.io/badge/LinkedIn-5ef2a0?style=for-the-badge&logo=linkedin&logoColor=5ef2a0&labelColor=0b131c&color=141f2b" alt="LinkedIn" /></a>
+<a href="https://www.linkedin.com/in/marvin-wandati/"><img src="https://img.shields.io/badge/LinkedIn-5ef2a0?style=for-the-badge&logo=linkedin&logoColor=5ef2a0&labelColor=0b131c&color=141f2b" alt="LinkedIn" /></a>
 <a href="mailto:wandatimarvin23@gmail.com"><img src="https://img.shields.io/badge/Gmail-5ef2a0?style=for-the-badge&logo=gmail&logoColor=5ef2a0&labelColor=0b131c&color=141f2b" alt="Email" /></a>
 <a href="https://github.com/Wandati26"><img src="https://img.shields.io/badge/GitHub-5ef2a0?style=for-the-badge&logo=github&logoColor=5ef2a0&labelColor=0b131c&color=141f2b" alt="GitHub" /></a>
 

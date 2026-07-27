@@ -35,7 +35,7 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           # set this to your actual timezone so the calendar buckets days correctly
-          config_timezone: UTC
+          config_timezone: Europe/Rome
           committer_branch: main
           committer_message: "chore(metrics): refresh overview card"
 
@@ -53,6 +53,6 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           # set this to your actual timezone so the calendar buckets days correctly
-          config_timezone: UTC
+          config_timezone: Europe/Rome
           committer_branch: main
           committer_message: "chore(metrics): refresh language card"

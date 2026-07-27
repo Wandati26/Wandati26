@@ -1,0 +1,39 @@
+name: generate contribution snake
+
+on:
+  schedule:
+    # daily at 00:00 UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # Actions are pinned to full commit SHAs, not floating tags — a mutable tag
+      # is a supply-chain hole. Comments record the human-readable version.
+      - name: Generate snake animation
+        # Platane/snk v3.5.0
+        uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg?color_snake=%231f6feb&color_dots=%23ebedf0,%23c6f0da,%238ce0b5,%233ddc84,%231f7a4d
+            dist/github-snake-dark.svg?color_snake=%2338d9e0&color_dots=%230b131c,%2314301f,%231f4a34,%233ddc84,%235ef2a0
+
+      - name: Publish to output branch
+        # crazy-max/ghaction-github-pages v5.0.0
+        uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

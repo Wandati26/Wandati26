@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" width="600" height="520" role="img" aria-label="Focus radar for 2026: AI and agentic security, software supply chain, policy as code, platform engineering and FinOps.">
+  <title>Focus radar — where I'm investing in 2026</title>
+
+  <defs>
+    <linearGradient id="rBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070b11"/>
+      <stop offset="100%" stop-color="#0a1018"/>
+    </linearGradient>
+    <linearGradient id="sweepFade" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3ddc84" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#3ddc84" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="rGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="rClip"><rect width="600" height="520" rx="12"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", "Consolas", "Liberation Mono", monospace; }
+    .dim { fill: #61758a; } .txt { fill: #b6c6d6; } .ok { fill: #3ddc84; } .cyan { fill: #38d9e0; }
+
+    /* scale, not the `r` geometry property — CSS animation of `r` is not
+       dependable across engines, whereas transform always is. */
+    @keyframes ping    { 0%,2%   { transform: scale(1);   opacity: 1; }
+                         16%      { transform: scale(4.6); opacity: 0; }
+                         100%     { transform: scale(1);   opacity: 0; } }
+    @keyframes blipLit { 0%,2%   { fill: #5ef2a0; }
+                         20%      { fill: #3ddc84; }
+                         70%,100% { fill: #1f4a34; } }
+    @keyframes lblLit  { 0%,2%   { fill: #d7fff0; }
+                         25%      { fill: #b6c6d6; }
+                         80%,100% { fill: #7d90a3; } }
+    @keyframes ringPulse { 0%,100% { opacity: .5; } 50% { opacity: .95; } }
+
+    .ping { transform-box: fill-box; transform-origin: 50% 50%;
+            animation: ping 5s ease-out infinite; }
+    .blip { animation: blipLit 5s linear infinite; }
+    .lbl  { animation: lblLit 5s linear infinite; }
+
+    /* sweep is 5s per revolution; each target fires as the beam crosses it */
+    .t1 { animation-delay: 0.69s; }  /* 50deg  */
+    .t2 { animation-delay: 1.81s; }  /* 130deg */
+    .t3 { animation-delay: 3.19s; }  /* 230deg */
+    .t4 { animation-delay: 4.31s; }  /* 310deg */
+
+    .breathe { animation: ringPulse 3.4s ease-in-out infinite; }
+  </style>
+
+  <g clip-path="url(#rClip)">
+    <rect width="600" height="520" fill="url(#rBg)"/>
+
+    <text class="mono cyan" x="24" y="32" font-size="13.5" letter-spacing="2.2">◢ FOCUS RADAR · 2026</text>
+    <text class="mono dim" x="24" y="50" font-size="11.5">where I'm deepening — not a buzzword list</text>
+    <line x1="24" y1="62" x2="576" y2="62" stroke="#152230"/>
+
+    <!-- rings -->
+    <g fill="none" stroke="#16232f" stroke-width="1">
+      <circle cx="300" cy="275" r="55"/>
+      <circle cx="300" cy="275" r="100"/>
+      <circle cx="300" cy="275" r="145"/>
+    </g>
+    <circle class="breathe" cx="300" cy="275" r="170" fill="none" stroke="#1d3244" stroke-width="1.4"/>
+    <g stroke="#16232f" stroke-width="1">
+      <line x1="130" y1="275" x2="470" y2="275"/>
+      <line x1="300" y1="105" x2="300" y2="445"/>
+      <line x1="179.8" y1="154.8" x2="420.2" y2="395.2"/>
+      <line x1="420.2" y1="154.8" x2="179.8" y2="395.2"/>
+    </g>
+
+    <!-- rotating sweep -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+                        from="0 300 275" to="360 300 275" dur="5s" repeatCount="indefinite"/>
+      <path d="M300 275 L300 105 A170 170 0 0 1 420.2 154.8 Z" fill="url(#sweepFade)"/>
+      <line x1="300" y1="275" x2="300" y2="105" stroke="#7dffc0" stroke-width="1.6" opacity="0.9"/>
+    </g>
+
+    <circle cx="300" cy="275" r="3" fill="#5ef2a0" filter="url(#rGlow)"/>
+
+    <!-- ============ target 1 · 50deg · AI / AGENTIC ============ -->
+    <g>
+      <circle class="ping t1" cx="391.9" cy="197.9" r="3.5" fill="none" stroke="#5ef2a0" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+      <circle class="blip t1" cx="391.9" cy="197.9" r="4" fill="#1f4a34"/>
+      <text class="mono lbl t1" x="405" y="202" font-size="16" letter-spacing="0.5">AI / AGENTIC SEC</text>
+    </g>
+
+    <!-- ============ target 2 · 130deg · SUPPLY CHAIN ============ -->
+    <g>
+      <circle class="ping t2" cx="391.9" cy="352.1" r="3.5" fill="none" stroke="#5ef2a0" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+      <circle class="blip t2" cx="391.9" cy="352.1" r="4" fill="#1f4a34"/>
+      <text class="mono lbl t2" x="405" y="357" font-size="16" letter-spacing="0.5">SUPPLY CHAIN</text>
+    </g>
+
+    <!-- ============ target 3 · 230deg · POLICY-AS-CODE ============ -->
+    <g>
+      <circle class="ping t3" cx="208.1" cy="352.1" r="3.5" fill="none" stroke="#5ef2a0" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+      <circle class="blip t3" cx="208.1" cy="352.1" r="4" fill="#1f4a34"/>
+      <text class="mono lbl t3" x="195" y="357" font-size="16" text-anchor="end" letter-spacing="0.5">POLICY-AS-CODE</text>
+    </g>
+
+    <!-- ============ target 4 · 310deg · PLATFORM + FINOPS ============ -->
+    <g>
+      <circle class="ping t4" cx="208.1" cy="197.9" r="3.5" fill="none" stroke="#5ef2a0" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+      <circle class="blip t4" cx="208.1" cy="197.9" r="4" fill="#1f4a34"/>
+      <text class="mono lbl t4" x="195" y="202" font-size="16" text-anchor="end" letter-spacing="0.5">PLATFORM + FINOPS</text>
+    </g>
+
+    <text class="mono dim" x="300" y="498" font-size="11" text-anchor="middle" letter-spacing="1.2">SWEEP 5s · 4 TRACKED DOMAINS</text>
+
+    <rect x="0.5" y="0.5" width="599" height="519" rx="12" fill="none" stroke="#233544"/>
+  </g>
+</svg>

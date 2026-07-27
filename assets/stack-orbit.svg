@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 570" width="570" height="570" role="img" aria-label="Toolchain orbiting a hardened core: AWS, Terraform, Kubernetes, Docker, GitHub Actions, Cosign, SBOM, OIDC, Grafana, OpenSearch, Ansible, Athena, Playwright, ELK.">
+  <title>Toolchain — everything orbits one hardened, signed core</title>
+
+  <defs>
+    <linearGradient id="oBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070b11"/>
+      <stop offset="100%" stop-color="#0a1018"/>
+    </linearGradient>
+    <radialGradient id="coreGlow">
+      <stop offset="0%" stop-color="#3ddc84" stop-opacity="0.30"/>
+      <stop offset="70%" stop-color="#3ddc84" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#3ddc84" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hexGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#123024"/>
+      <stop offset="100%" stop-color="#0a1a14"/>
+    </linearGradient>
+    <filter id="oGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="oClip"><rect width="570" height="570" rx="12"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", "Consolas", "Liberation Mono", monospace; }
+    .dim { fill: #61758a; } .cyan { fill: #38d9e0; } .ok { fill: #3ddc84; }
+    .chipBox { fill: #0c141d; stroke: #22303e; stroke-width: 1.2; }
+    .chipTxt { fill: #a9bccd; font-size: 12px; }
+
+    @keyframes chipLive { 0%,100% { stroke: #22303e; } 50% { stroke: #3ddc84; } }
+    @keyframes corePulse{ 0%,100% { opacity: .45; transform: scale(1); }
+                          50%      { opacity: .9;  transform: scale(1.06); } }
+    @keyframes haloPulse{ 0%,100% { opacity: .30; } 50% { opacity: .7; } }
+    @keyframes dashSpin { to { stroke-dashoffset: -60; } }
+
+    .chipBox { animation: chipLive 6s ease-in-out infinite; }
+    .d0 { animation-delay: 0s; }   .d1 { animation-delay: .43s; } .d2 { animation-delay: .86s; }
+    .d3 { animation-delay: 1.29s; }.d4 { animation-delay: 1.72s; }.d5 { animation-delay: 2.15s; }
+    .d6 { animation-delay: 2.58s; }.d7 { animation-delay: 3.01s; }.d8 { animation-delay: 3.44s; }
+    .d9 { animation-delay: 3.87s; }.d10{ animation-delay: 4.30s; }.d11{ animation-delay: 4.73s; }
+    .d12{ animation-delay: 5.16s; }.d13{ animation-delay: 5.59s; }
+
+    .core { transform-box: fill-box; transform-origin: 50% 50%; animation: corePulse 4s ease-in-out infinite; }
+    .halo { animation: haloPulse 4s ease-in-out infinite; }
+    .track{ stroke-dasharray: 3 9; animation: dashSpin 8s linear infinite; }
+  </style>
+
+  <g clip-path="url(#oClip)">
+    <rect width="570" height="570" fill="url(#oBg)"/>
+
+    <text class="mono cyan" x="24" y="32" font-size="13.5" letter-spacing="2.2">◢ TOOLCHAIN</text>
+    <text class="mono dim" x="24" y="50" font-size="11.5">everything orbits one hardened, signed core</text>
+    <line x1="24" y1="62" x2="546" y2="62" stroke="#152230"/>
+
+    <!-- orbit tracks -->
+    <circle class="track" cx="285" cy="300" r="100" fill="none" stroke="#1a2836" stroke-width="1"/>
+    <circle class="track" cx="285" cy="300" r="200" fill="none" stroke="#1a2836" stroke-width="1"/>
+
+    <!-- core -->
+    <circle class="halo" cx="285" cy="300" r="88" fill="url(#coreGlow)"/>
+    <g class="core">
+      <path d="M285 258 L321.4 279 L321.4 321 L285 342 L248.6 321 L248.6 279 Z"
+            fill="url(#hexGrad)" stroke="#3ddc84" stroke-width="1.8" filter="url(#oGlow)"/>
+    </g>
+    <text class="mono ok" x="285" y="295" font-size="12" text-anchor="middle" letter-spacing="1.4">SECURE</text>
+    <text class="mono ok" x="285" y="312" font-size="12" text-anchor="middle" letter-spacing="1.4">CORE</text>
+
+    <!-- ================= INNER RING · r=100 · clockwise 40s ================= -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 285 300" to="360 285 300" dur="40s" repeatCount="indefinite"/>
+
+      <g transform="translate(285,200)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="40s" repeatCount="indefinite"/>
+        <rect class="chipBox d0" x="-22" y="-13" width="44" height="26" rx="13"/>
+        <text class="mono chipTxt" x="0" y="4.2" text-anchor="middle">AWS</text>
+      </g></g>
+
+      <g transform="translate(380.1,269.1)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="40s" repeatCount="indefinite"/>
+        <rect class="chipBox d1" x="-43" y="-13" width="86" height="26" rx="13"/>
+        <text class="mono chipTxt" x="0" y="4.2" text-anchor="middle">Terraform</text>
+      </g></g>
+
+      <g transform="translate(343.8,380.9)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="40s" repeatCount="indefinite"/>
+        <rect class="chipBox d2" x="-47" y="-13" width="94" height="26" rx="13"/>
+        <text class="mono chipTxt" x="0" y="4.2" text-anchor="middle">Kubernetes</text>
+      </g></g>
+
+      <g transform="translate(226.2,380.9)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="40s" repeatCount="indefinite"/>
+        <rect class="chipBox d3" x="-33" y="-13" width="66" height="26" rx="13"/>
+        <text class="mono chipTxt" x="0" y="4.2" text-anchor="middle">Docker</text>
+      </g></g>
+
+      <g transform="translate(189.9,269.1)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="40s" repeatCount="indefinite"/>
+        <rect class="chipBox d4" x="-36" y="-13" width="72" height="26" rx="13"/>
+        <text class="mono chipTxt" x="0" y="4.2" text-anchor="middle">Actions</text>
+      </g></g>
+    </g>
+
+    <!-- ================= OUTER RING · r=200 · counter-clockwise 64s ================= -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 285 300" to="-360 285 300" dur="64s" repeatCount="indefinite"/>
+
+      <g transform="translate(353.4,112.1)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="64s" repeatCount="indefinite"/>
+        <rect class="chipBox d5" x="-33" y="-13" width="66" height="26" rx="13"/>
+        <text class="mono chipTxt" x="0" y="4.2" text-anchor="middle">Cosign</text>
+      </g></g>
+
+      <g transform="translate(458.2,200)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="64s" repeatCount="indefinite"/>
+        <rect class="chipBox d6" x="-25" y="-13" width="50" height="26" rx="13"/>
+        <text class="mono chipTxt" x="0" y="4.2" text-anchor="middle">SBOM</text>
+      </g></g>
+
+      <g transform="translate(482,334.7)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="64s" repeatCount="indefinite"/>
+        <rect class="chipBox d7" x="-25" y="-13" width="50" height="26" rx="13"/>
+        <text class="mono chipTxt" x="0" y="4.2" text-anchor="middle">OIDC</text>
+      </g></g>
+
+      <g transform="translate(413.6,453.2)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="64s" repeatCount="indefinite"/>
+        <rect class="chipBox d8" x="-36" y="-13" width="72" height="26" rx="13"/>
+        <text class="mono chipTxt" x="0" y="4.2" text-anchor="middle">Grafana</text>
+      </g></g>
+
+      <g transform="translate(285,500)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="64s" repeatCount="indefinite"/>
+        <rect class="chipBox d9" x="-47" y="-13" width="94" height="26" rx="13"/>
+        <text class="mono chipTxt" x="0" y="4.2" text-anchor="middle">OpenSearch</text>
+      </g></g>
+
+      <g transform="translate(156.4,453.2)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="64s" repeatCount="indefinite"/>
+        <rect class="chipBox d10" x="-36" y="-13" width="72" height="26" rx="13"/>
+        <text class="mono chipTxt" x="0" y="4.2" text-anchor="middle">Ansible</text>
+      </g></g>
+
+      <g transform="translate(88,334.7)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="64s" repeatCount="indefinite"/>
+        <rect class="chipBox d11" x="-33" y="-13" width="66" height="26" rx="13"/>
+        <text class="mono chipTxt" x="0" y="4.2" text-anchor="middle">Athena</text>
+      </g></g>
+
+      <g transform="translate(111.8,200)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="64s" repeatCount="indefinite"/>
+        <rect class="chipBox d12" x="-47" y="-13" width="94" height="26" rx="13"/>
+        <text class="mono chipTxt" x="0" y="4.2" text-anchor="middle">Playwright</text>
+      </g></g>
+
+      <g transform="translate(216.6,112.1)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="64s" repeatCount="indefinite"/>
+        <rect class="chipBox d13" x="-22" y="-13" width="44" height="26" rx="13"/>
+        <text class="mono chipTxt" x="0" y="4.2" text-anchor="middle">ELK</text>
+      </g></g>
+    </g>
+
+    <text class="mono dim" x="285" y="545" font-size="11" text-anchor="middle" letter-spacing="1.2">2 ORBITS · 14 TOOLS · ONE SIGNED CORE</text>
+
+    <rect x="0.5" y="0.5" width="569" height="569" rx="12" fill="none" stroke="#233544"/>
+  </g>
+</svg>

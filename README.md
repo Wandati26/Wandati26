@@ -181,7 +181,7 @@ Golden paths so the secure route is the *easy* route. And **cost as a guardrail*
 </details>
 
 <details>
-<summary><b>◢ Ryanada Limited</b> · <code>Feb 2025 — Aug 2025</code> — <i>Cloud hosting platform · domains & VPS · Kubernetes operations</i></summary>
+<summary><b>◢ DevOps Engineer · Ryanada Limited</b> · <code>Feb 2025 — Aug 2025</code> — <i>Cloud hosting platform · domains & VPS · Kubernetes operations</i></summary>
 
 <br/>
 
